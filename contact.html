@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Suraka Abdul Hameed's web development portfolio showcasing HTML, CSS, JS and React projects.">
+    <title>Contact | Abdul Portfolio</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+
+
+</head>
+<body>
+    <header class="site-header">
+        <a href="index.html"  class="logo">Young Pal</a>
+        <button
+    class="menu-toggle"
+    aria-label="Toggle menu"
+    aria-expanded="false"
+  >
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </button>
+        <nav class="nav-menu" aria-label="Primary navigation">
+            <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+
+     <section class="contact-page">
+    <div class="container">
+      <!-- Contact Intro + Social -->
+      <div class="contact-info">
+        <h2>Let’s Build Something Together</h2>
+        <p>
+          Tell me about your project—what you need, your timeline,
+          and your budget. I’ll get back within 24 hours!
+        </p>
+        <ul class="social-list">
+          <li><a href="https://github.com/yourusername" target="_blank" rel="noreferrer"><i class="fab fa-github"></i></a></li>
+          <li><a href="https://facebook.com/yourusername" target="_blank" rel="noreferrer"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="https://wa.me/yourwhatsapp" target="_blank" rel="noreferrer"><i class="fab fa-whatsapp"></i></a></li>
+          <li><a href="https://linkedin.com/in/abdul-hameed-726889257" target="_blank" rel="noreferrer"><i class="fab fa-linkedin-in"></i></a></li>
+          <li><a href="https://t.me/yourusername" target="_blank" rel="noreferrer"><i class="fab fa-telegram-plane"></i></a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Form -->
+      <form class="contact-form" action="https://formspree.io/f/yourformid" method="POST">
+        <div class="form-group">
+          <label for="name">Name *</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email *</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <div class="form-group">
+          <label for="projectType">Type of Project</label>
+          <select id="projectType" name="projectType">
+            <option value="">Select one</option>
+            <option value="portfolio">Portfolio Site</option>
+            <option value="ecommerce">E-commerce</option>
+            <option value="blog">Blog / Content</option>
+            <option value="custom">Custom App</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="timeline">Timeline (weeks)</label>
+          <input type="text" id="timeline" name="timeline" placeholder="e.g., 4–6 weeks" />
+        </div>
+
+        <div class="form-group">
+          <label for="budget">Budget Range (USD)</label>
+          <input type="text" id="budget" name="budget" placeholder="e.g., 500–1,000" />
+        </div>
+
+        <div class="form-group full-width">
+          <label for="message">Project Details *</label>
+          <textarea id="message" name="message" rows="6" required placeholder="Describe your idea…"></textarea>
+        </div>
+
+        <button type="submit" class="btn-submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="footer" aria-labelledby="footer-heading">
+  <div class="container">
+    <div class="footer-content">
+      <!-- Footer Branding -->
+      <div class="footer-logo">
+        <h3 id="footer-heading">Abdul Hameed Suraka</h3>
+      </div>
+
+      <!-- Footer Navigation -->
+      <nav class="footer-nav" aria-label="Footer links">
+        <ul class="footer-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Legal -->
+    <div class="footer-bottom">
+      <p>Abdul Hameed Portfolio&copy; All rights reserved <span id="year"></span></p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
